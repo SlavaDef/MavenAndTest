@@ -18,6 +18,11 @@ public class Main {
     public static void main(String[] args) {
         BasicConfigurator.configure(); // конфігуратор для логгера
 
+      /* Logger logger = LoggerFactory.getLogger(CurrencyDto.class);
+       int age = 23;
+
+       logger.info("At the age of {} ramu got his first job", age); */
+
 // уявляємо що до нас прийшов json
         String cur = "{\n"
                 + "   \"currency\" : \"USD\",\n"
@@ -67,6 +72,7 @@ public class Main {
        DogDto dogDto1 = gson1.fromJson(dogStr, DogDto.class);
      //  System.out.println(dogDto1);
         LOGGER.info(""+dogDto1);
+        LOGGER.info("The End");
 
 
     }
